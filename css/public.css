@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #cccccc;
+}
+ul{
+    list-style: none;
+}
+header{
+    height: .68rem;
+    display: flex;
+    background: #ff8a00;
+    align-items: center;
+}
+header img{
+    height: .42rem;
+}
+header>img:nth-child(1){
+    margin-left: .2rem;
+    margin-right: 1.1rem;
+}
+header>img:nth-child(2){
+    margin-right: .2rem;
+}
+/* 底部 */
+footer{
+    background: #2f3130;
+}
+footer .index{
+    widows: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    border-bottom: 1px solid #6B6D6C;
+    margin-left: .2rem;
+    font-size: .18rem;
+    color: #6B6D6C;
+}
+footer .user .iphone_logo{
+    width: .37rem;
+    height: .43rem;
+    background: url(../image/index/apple.png)no-repeat;
+    margin-right: .2rem;
+}
+footer .user .androir_logo{
+    width: .37rem;
+    height: .43rem;
+    background: url(../image/index/android.png)no-repeat;
+    margin-right: .2rem;
+}
+footer .user{
+    display: flex;
+    justify-content: space-around;
+}
+footer .user .iphone{
+    display: flex;
+    margin-left: .4rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+footer .user .androir{
+    display: flex;
+    margin-right: .4rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+footer .user .iphone .ip{
+    display: flex;
+    flex-direction: column;
+}
+footer .user .androir .an{
+    display: flex;
+    flex-direction: column;
+}
+footer .user .androir p{
+    display: flex;
+    font-size: .15rem;
+    color: #6B6D6C;
+}
+footer .user .iphone p{
+    display: flex;
+    font-size: .15rem;
+    color: #6B6D6C;
+}
+footer .company{
+    display: flex;
+    justify-content: center;
+    font-size: .2rem;
+    color: #6B6D6C;
+}
+
+footer .permit{
+    display: flex;
+    justify-content: center;
+    font-size: .14rem;
+    color: #6B6D6C;
+}

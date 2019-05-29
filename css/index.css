@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #cccccc;
+}
+ul{
+    list-style: none;
+}
+header{
+    height: .68rem;
+    display: flex;
+    background: #ff8a00;
+    align-items: center;
+}
+header img{
+    height: .42rem;
+}
+header>img:nth-child(1){
+    margin-left: .2rem;
+    margin-right: 1.1rem;
+}
+header>img:nth-child(2){
+    margin-right: .2rem;
+}
+.banner{
+    position: relative;
+    box-sizing: border-box;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.banner input{
+    width: 3.4rem;
+    height: .3rem;
+    border: none;
+    border: 1px solid #cccccc;
+    border-radius: .05rem;
+    box-shadow: 0 -2px 3px -1px #cccccc,0 2px 3px -1px #cccccc;
+    position: absolute;
+    bottom: .4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #cccccc;
+    text-indent: .4rem;
+    line-height: .3rem;
+    background: url(../image/index/seach.jpg)no-repeat .1rem center;
+    background-size: .25rem .25rem;
+    background-color: white;
+}
+.house{
+    background: #ff8a00;
+    box-sizing: border-box;
+}
+.house ul{
+    display: flex;
+    justify-content:center; 
+    margin-bottom: .1rem;
+}
+.house ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.house ul li .img{
+    width: .9rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.house ul li .img img{
+    display: block;
+    width: 60%;
+    height: auto;
+}
+.house ul li p{
+    font-size: .14rem;
+    color: white;
+    transform: translateY(-.1rem);
+}
+.banner2{
+    width: 100%;
+    box-sizing: border-box;
+}
+.banner2 img{
+    width: 100%;
+    height: auto;
+}
+.hot{
+    width: 100%;
+}
+.hot h2{
+    background: #ff8a00;
+    font-size: 0.14rem;
+    color: #fff;
+    padding: 0.1rem 0 0.08rem 0.2rem;
+}
+.hot h2 strong{
+    font-size: .2rem;
+}
+.hot h2 span{
+    font-size: .13rem
+}
+.hot .saleList li{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #FF8989;
+    padding-bottom: .2rem;
+}
+.hot .saleList li .left{
+    margin-left: .3rem;
+}
+.hot .saleList li .left img{
+    width: .81rem;
+    height: .81rem;
+}
+.hot .saleList li .right{
+    display: flex;
+    flex-direction: column;
+    margin-top: .2rem;
+    margin-right: .3rem;
+}
+.hot .saleList li .right h3{
+    font-size: .22rem;
+    width: 1.87rem;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.hot .saleList li .right .info{
+    display: flex;
+    justify-content: space-between;
+    padding: .05rem 0;
+}
+.hot .saleList li .right .info p{
+    font-size: .13rem;
+}
+.hot .saleList li .right .info span{
+    font-size: .13rem;
+    color: #ff8a00;
+    font-weight: 700;
+}
+.hot .saleList li .right .addres{
+    display: flex;
+    justify-content: space-between;
+    padding: .05rem 0;
+}
+.hot .saleList li .right .addres p{
+    font-size: .13rem;
+    color: #8B8B8B;
+}
+.hot .saleList li .right .addres span{
+    font-size: .13rem;
+    color: #8B8B8B;
+}
+.hot .saleList li .right .alike{
+    /* height: .17rem; */
+    font-size: .13rem;
+    padding: .05rem 0;
+}
+.hot .saleList li .right .alike a{
+    color: #849AAE;
+    background: #F4F7F9;
+}
+.hot .saleList li .right .alike a:nth-child(2){
+    margin-left: .1rem;
+}
+.hot .saleList li .right .alike a:nth-child(3){
+    margin-left: .1rem;
+}
+/* 友情链接部分 */
+.hotAttention{
+    /* margin-top: .1rem; */
+    overflow: hidden;
+}
+.hotAttention .title{
+    display: flex;
+    justify-content: space-around;
+    padding: .2rem 0rem;
+    border-bottom: 1px solid #ff8a00;
+}
+.hotAttention .title h3{
+    font-size: .25rem;
+    font-weight: 500;
+}
+.hotAttention .title h3 a{
+    color: #666666;
+}
+.hotAttention .list{
+    display: flex;
+    justify-content:space-around;
+}
+.hotAttention .list ul{
+    margin-top: .2rem;
+}
+.hotAttention .list ul li{
+    font-size: .14rem;
+    border: none;
+    margin-bottom:.1rem;
+}
+/* 底部 */
+footer{
+    background: #2f3130;
+}
+footer .index{
+    widows: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    border-bottom: 1px solid #6B6D6C;
+    margin-left: .2rem;
+    font-size: .18rem;
+    color: #6B6D6C;
+}
+footer .user .iphone_logo{
+    width: .37rem;
+    height: .43rem;
+    background: url(../image/index/apple.png)no-repeat;
+    margin-right: .2rem;
+}
+footer .user .androir_logo{
+    width: .37rem;
+    height: .43rem;
+    background: url(../image/index/android.png)no-repeat;
+    margin-right: .2rem;
+}
+footer .user{
+    display: flex;
+    justify-content: space-around;
+}
+footer .user .iphone{
+    display: flex;
+    margin-left: .4rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+footer .user .androir{
+    display: flex;
+    margin-right: .4rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+footer .user .iphone .ip{
+    display: flex;
+    flex-direction: column;
+}
+footer .user .androir .an{
+    display: flex;
+    flex-direction: column;
+}
+footer .user .androir p{
+    display: flex;
+    font-size: .15rem;
+    color: #6B6D6C;
+}
+footer .user .iphone p{
+    display: flex;
+    font-size: .15rem;
+    color: #6B6D6C;
+}
+footer .company{
+    display: flex;
+    justify-content: center;
+    font-size: .2rem;
+    color: #6B6D6C;
+}
+
+footer .permit{
+    display: flex;
+    justify-content: center;
+    font-size: .14rem;
+    color: #6B6D6C;
+}
+
+.download{
+    width: 100%;
+    display: flex;
+    background: rgba(0,0,0,0.5);
+    height: .6rem;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+}
+.download>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: .4rem;
+    height: .4rem;
+    font-size: .2rem;
+    line-height: .4rem;
+    margin-left: .5rem;
+}
+.logo>img{
+    width: .4rem;
+    height: .4rem;
+    opacity: 1;
+    /* z-index: 100; */
+}
+.hangqing{
+    font-size: .15rem;
+    color: white;
+    margin-left: .2rem;
+}
+.hangqing>p:nth-child(1){
+    font-size: .20rem;
+}
+.free{
+    font-size: .2rem;
+    padding: .165rem .245rem;
+    background: #ff8a00;
+    color: white;
+    /* margin-left: .2rem; */
+}

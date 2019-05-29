@@ -1,0 +1,35 @@
+{
+    "arr_date":[
+        {
+            "img":"./image/index/img1.jpg",
+            "title":"文化部中间层一层带阳台",
+            "fangxiang":"2室1厅96㎡南北",
+            "jiage":"1105万",
+            "dizhi":"红庙北里",
+            "totle":"14268元/平",
+            "type1":"学区房",
+            "type2":"独家"
+        },
+        {
+            "img":"./image/index/img2.png",
+            "title":"光大水墨  精装复式 稀缺",
+            "fangxiang":"2室1厅96㎡南北",
+            "jiage":"280万",
+            "dizhi":"光大水墨",
+            "totle":"14268元/平",
+            "type1":"学区房",
+            "type2":"独家",
+            "type3":"满五唯一"
+        },
+        {
+            "img":"./image/index/img3.png",
+            "title":"南北通透 精装修 全明格局",
+            "fangxiang":"2室1厅96㎡南北",
+            "jiage":"320万",
+            "dizhi":"北京新天地",
+            "totle":"14268元/平",
+            "type1":"地铁房",
+            "type2":"独家"
+        }
+    ]
+}

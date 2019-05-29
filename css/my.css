@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+
+}
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #F5F4F5;
+}
+header{
+    width: 100%;
+    background: url(../image/my/bg1.png)no-repeat;
+    background-size:cover;
+    height: 2.5rem; 
+    position: relative;
+}
+header>.box{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header>.box>.my{
+    margin-right: .2rem;
+}
+header>.box>.my>span{
+    display: block;
+    width: .27rem;
+    height: .3rem;
+    background: url(../image/my/urse.png)no-repeat;
+} 
+header>.box>.download>span{
+    display: block;
+    width: .27rem;
+    height: .3rem;
+    background: url(../image/my/down.png)no-repeat;
+} 
+header>.box>.download{
+    margin-right: .2rem;
+}
+header>.box>.my>span>img{
+    width: 100%;
+    /* height: 100%; */
+}
+header>.box>.download>span>img{
+    width: 100%;
+    /* height: 100%; */
+}
+header>.box>.my>p{
+    font-size: .15rem;
+    color: white;
+}
+header>.box>.download>p{
+    font-size: .15rem;
+    color: white;
+}
+.logo{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateY(-50%); */
+}
+.logo>img{
+    display: block;
+}
+.logo>p{
+    color: white;
+    border: none;
+    border:1px solid white;
+    padding: .05rem .2rem;
+    font-size: .2rem;
+    position: absolute;
+    left: .1rem;
+    margin-top: .2rem;
+}
+section{
+    width: 100%;
+    margin-top: .2rem;
+    background: white;
+}
+section>ul{
+    padding: 0 .2rem;
+}
+section>ul>li{
+    display: flex;
+    padding: .2rem 0;
+    position: relative;
+}
+section>ul>li>.img{
+    display: block;
+    width: .32rem;
+    height: .32rem;
+}
+section>ul>li>.fuhao{
+    font-family: 宋体;
+}
+section>ul>li>.img>img{
+    display: block;
+    width: .32rem;
+    height: .32rem;
+}
+section>ul>li>p{
+    font-size: .25rem;
+    margin-left: .2rem;
+}
+section>ul>li>.fuhao{
+    font-size: .2rem;
+    /* text-align: right; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

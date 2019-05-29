@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    input{
+    width: 70%;
+    height: .3rem;
+    font-size: .16rem;
+    border: none;
+    border: 1px solid #ff8a00;
+    border-radius: .1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+    
+button{
+    padding: .05rem .1rem;
+    border: none;
+    background: #ff8a00;
+    color: white;
+    font-size: .17rem;
+    border-radius: .1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="phone" id="phone">
+    <input type="password" name="password" id="password">
+    <button>登录</button>
+    <script src="./js/zepto.js"></script>
+    <script>
+        $(function () {
+        function setRem() {
+            var clienWidth = $(window).width();
+            var uiWidth = 375 //ui设计稿的宽度
+            var nowRem = (clienWidth / uiWidth * 100);
+            $('html').css('font-size', parseInt(nowRem, 10) + 'px');
+
+        }
+        setRem();
+        var timer;
+        $(window).on('resize', function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                setRem();
+            }, 100)
+        });
+    });
+
+
+
+
+
+
+
+        $('button').on('click', function () {
+            // 后台登录接口
+            // https://www.apiopen.top/login?key=00d91e8e0cca2b76f515926a36db68f5&phone=13594347817&passwd=123456
+           //
+            $.ajax({
+                url: 'https://www.apiopen.top/login',
+                data: {
+                    key: '00d91e8e0cca2b76f515926a36db68f5',
+                    phone: $('#phone').val(),
+                    passwd: $('#password').val(),
+                },
+                type: 'POST',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    if (data.code == 200) {
+                        setTimeout(function () {
+                            window.location.href = './index.html';
+                        }, 1000)
+                    }else if(data.code == 202){
+                        alert(data.msg);
+                        return false;
+                    }
+
+                },
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

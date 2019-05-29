@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <img src="./image/index/logo.jpg" alt="">
+        <img src="./image/index/my.jpg" alt="">
+        <img src="./image/index/xiazai.jpg" alt="">
+    </header>
+    <div class="banner">
+        <img src="./image/index/banner.png" alt="">
+        <input type="text" value="输入小区或商圈名开始找房咯！">
+    </div>
+    <div class="house">
+        <ul>
+            <li>
+                <div class="img">
+                    <img src="./image/index/index_03.png" alt="">
+                </div>
+                <p>二手房</p>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./image/index/index_05.png" alt="">
+                </div>
+                <p>新房</p>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./image/index/index_07.png" alt="">
+                </div>
+                <p>租房</p>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./image/index/index_09.png" alt="">
+                </div>
+                <p>卖房</p>
+            </li>
+        </ul>
+    </div>
+    <div class="banner2">
+        <img src="./image/index/banner2.png" alt="">
+    </div>
+    <section class="hot">
+        <h2>
+            <strong>热门房源</strong>
+            <br>
+            <span>Hot house</span>
+        </h2>
+        <ul class="saleList">
+            <!-- <li>
+                <div class="left">
+                    <img src="./image/index/img1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>文化部中间层一层带阳台</h3>
+                    <div class="info">
+                        <p>2室1厅96㎡南北</p>
+                        <span>1105万</span>
+                    </div>
+                    <div class="addres">
+                        <p>红庙北里</p>
+                        <span>14268元/平</span>
+                    </div>
+                    <p class="alike">
+                        <a href="">学区房</a><a href="">独家</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <img src="./image/index/img2.png" alt="">
+                </div>
+                <div class="right">
+                    <h3>光大水墨  精装复式 稀缺</h3>
+                    <div class="info">
+                        <p>2室1厅96㎡南北</p>
+                        <span>280万</span>
+                    </div>
+                    <div class="addres">
+                        <p>光大水墨</p>
+                        <span>14268元/平</span>
+                    </div>
+                    <p class="alike">
+                        <a href="">学区房</a><a href="">独家</a><a href="">满五唯一</a>
+                    </p>
+                </div>
+            </li> -->
+            <li>
+                <div class="left">
+                    <img src="./image/index/img3.png" alt="">
+                </div>
+                <div class="right">
+                    <h3>南北通透 精装修 全明格局</h3>
+                    <div class="info">
+                        <p>2室1厅96㎡南北</p>
+                        <span>320万</span>
+                    </div>
+                    <div class="addres">
+                        <p>北京新天地</p>
+                        <span>14268元/平</span>
+                    </div>
+                    <p class="alike">
+                        <a href="">地铁房</a><a href="">独家</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div class="hotAttention">
+            <div class="title">
+                <h3><a href="">热门关注</a></h3>
+                <h3><a href="">友情链接</a></h3>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>北京二手房</li>
+                    <li>北京二手房价</li>
+                    <li>海淀日租房</li>
+                    <li>朝阳新房</li>
+                </ul>
+                <ul>
+                    <li>北京找房无忧</li>
+                    <li>青年家园</li>
+                    <li>免税房源</li>
+                    <li>满五年唯一免税</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="index">
+            <h3>北京找房无忧网>首页</h3>
+        </div>
+        <div class="user">
+            <div class="iphone">
+                <div class="iphone_logo"></div>
+                <div class="ip">
+                    <p>iphone</p>
+                    <p>客户端</p>
+                </div>
+
+            </div>
+            <div class="androir">
+                <div class="androir_logo"></div>
+                <div class="an">
+                    <p>androir</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+        </div>
+        <div class="company">北京找房无忧房地产经纪公司</div>
+        <div class="permit">网络经营许可证京ICP备20160812号</div>
+    </footer>
+    <div class="download">
+            <img src="./image/index/close.png" alt="">
+        <div class="logo">
+            <img src="./image/index/download.png" alt="">
+        </div>
+        <div class="hangqing">
+            <p>找房无忧</p>
+            <p>市场行情，一手掌握</p>
+        </div>
+        <div class="free">
+            免费下载
+        </div>
+    </div>
+
+</body>
+<script src="./js/zepto.js"></script>
+<script>
+    $(function () {
+        function setRem() {
+            var clienWidth = $(window).width();
+            var uiWidth = 375 //ui设计稿的宽度
+            var nowRem = (clienWidth / uiWidth * 100);
+            $('html').css('font-size', parseInt(nowRem, 10) + 'px');
+
+        }
+        setRem();
+        var timer;
+        $(window).on('resize', function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                setRem();
+            }, 100)
+        });
+    });
+    //渲染模拟数据
+    $.ajax({
+        url: './json/data2.json',
+        success: function (data) {
+            console.log(data);
+            var list = '';
+            for (var i = 0; i < data.arr_date.length; i++) {
+                list += '<li>';
+                list += '<div class="left">';
+                list += '<img src="' + data.arr_date[i].img + '" alt="">';
+                list += '</div>';
+                list += '<div class="right">';
+                list += '<h3>' + data.arr_date[i].title + '</h3>';
+                list += '<div class="info">';
+                list += '<p>' + data.arr_date[i].fangxiang + '</p>';
+                list += '<span>' + data.arr_date[i].jiage + '</span>';
+                list += '</div>';
+                list += '<div class="addres">';
+                list += '<p>' + data.arr_date[i].dizhi + '</p>';
+                list += '<span>' + data.arr_date[i].totle + '</span>';
+                list += '</div>';
+                list += '<p class="alike">';
+                list += '<a href="">' + data.arr_date[i].type1 + '</a><a href="">' + data.arr_date[i].type2 + '</a>';
+                list += '</p>';
+                list += '</div>';
+                list += '</li>';
+            }
+            $('.saleList').html(list);
+        }
+    })
+
+
+</script>
+
+</html>
